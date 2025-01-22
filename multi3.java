@@ -10,9 +10,11 @@ public class multi3{
                 num.add(i);
             }
         }
-        for(int i = 0; i < num.size() - 1; i++){
+        for(int i = 0; i < num.size() - 1;){
             if(num.get(i) % 2 == 0){
                 num.remove(i);
+            }else{
+                i++;
             }
         }
         System.out.println(num);
